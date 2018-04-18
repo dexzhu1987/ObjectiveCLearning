@@ -18,7 +18,14 @@
     {
         _name = name;
         _email = email;
+        _numbers = [[NSMutableArray alloc]init];
     }
+    return self;
+}
+
+- (void) addPhoneNumber: (PhoneNumber*) PhoneNumber
+{
+    [_numbers addObject:PhoneNumber];
 }
 
 @end

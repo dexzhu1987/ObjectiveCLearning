@@ -10,6 +10,8 @@
 		561A3A5E2087DDD3002149FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 561A3A5D2087DDD3002149FF /* main.m */; };
 		561A3A662087DE44002149FF /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 561A3A652087DE44002149FF /* InputHandler.m */; };
 		561A3A692087E3B6002149FF /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 561A3A682087E3B6002149FF /* Contact.m */; };
+		561A3A6C2087E63B002149FF /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 561A3A6B2087E63B002149FF /* ContactList.m */; };
+		561A3A6F208800DF002149FF /* PhoneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 561A3A6E208800DF002149FF /* PhoneNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,10 @@
 		561A3A652087DE44002149FF /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		561A3A672087E3B6002149FF /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
 		561A3A682087E3B6002149FF /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		561A3A6A2087E63B002149FF /* ContactList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
+		561A3A6B2087E63B002149FF /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
+		561A3A6D208800DF002149FF /* PhoneNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneNumber.h; sourceTree = "<group>"; };
+		561A3A6E208800DF002149FF /* PhoneNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,10 @@
 			isa = PBXGroup;
 			children = (
 				561A3A5D2087DDD3002149FF /* main.m */,
+				561A3A6A2087E63B002149FF /* ContactList.h */,
+				561A3A6B2087E63B002149FF /* ContactList.m */,
+				561A3A6D208800DF002149FF /* PhoneNumber.h */,
+				561A3A6E208800DF002149FF /* PhoneNumber.m */,
 				561A3A672087E3B6002149FF /* Contact.h */,
 				561A3A682087E3B6002149FF /* Contact.m */,
 				561A3A642087DE44002149FF /* InputHandler.h */,
@@ -128,9 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561A3A6C2087E63B002149FF /* ContactList.m in Sources */,
 				561A3A5E2087DDD3002149FF /* main.m in Sources */,
 				561A3A692087E3B6002149FF /* Contact.m in Sources */,
 				561A3A662087DE44002149FF /* InputHandler.m in Sources */,
+				561A3A6F208800DF002149FF /* PhoneNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
