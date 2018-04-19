@@ -10,6 +10,19 @@
 
 
 @implementation QuestionFactory
+
+//option 2
+//-(instancetype) init
+//{
+//    self = [super init];
+//    if (self)
+//    {
+//        _questionSubclassNames = @[@"AdditionQuestion", @"SubtractionQuestion",@"MultipicationQuestion",@"DivisionQuestion"];
+//    }
+//    
+//}
+
+
 -(Question *) generateRandomQuestion
 {
     AddidtionalQuestion * question1 = [[AddidtionalQuestion alloc] init];
@@ -20,5 +33,13 @@
     NSInteger bound = [qarry count];
     int ramdon =  arc4random_uniform((uint32_t)bound);
     return [qarry objectAtIndex: ramdon];
+    
+    // if you put the string into the array;
+    // you can you do above with codes that comment out(option 2 before it) for faster operations;
+    // int index = arc4random_uniform(4);
+    // NSString *questionType = [questionSubclassNames objectAtIndex: index];
+    // Question *q = [[NSClassFromString(questionType)alloc]init];
+    // return q;
+    
 }
 @end

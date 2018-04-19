@@ -16,4 +16,7 @@
 
 -(Question *) generateRandomQuestion;
 
+//option 2
+//@property (nonatomic, strong) NSArray *questionSubclassNames;
+
 @end
