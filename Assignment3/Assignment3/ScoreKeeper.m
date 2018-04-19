@@ -21,6 +21,6 @@
 
 - (void) displayResult{
     CGFloat result = (float) _rights/ (_rights + _wrongs) * 100;
-    NSLog(@"Score: %ld right, %ld wrong --------- %.2f %%", _rights, _wrongs,  result);
+    NSLog(@"Score: %ld right, %ld wrong ---- %.2f %%", _rights, _wrongs,  result);
 };
 @end

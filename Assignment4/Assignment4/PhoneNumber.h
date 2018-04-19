@@ -10,6 +10,6 @@
 
 @interface PhoneNumber : NSObject
 @property (nonatomic, strong)  NSString* label;
-@property (nonatomic, strong) NSString* number;
+@property (nonatomic, strong)  NSString* number;
 - (instancetype) initWithLabel: (NSString *) label AndNumber: (NSString *) number;
 @end

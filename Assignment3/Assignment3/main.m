@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AdditionalQuestion.h"
 #import "InputHandler.h"
 #import "ScoreKeeper.h"
+#import "QuestionFactory.h"
+#import "QuestionManager.h"
 
 //NSString * getUserInput(NSString *prompt) {
 //    char inputChars[255];
@@ -25,9 +26,12 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         BOOL gameon = YES;
         NSLog(@"Maths!!");
-        ScoreKeeper *sk = [[ScoreKeeper alloc]init];
+        ScoreKeeper *sk = [[ScoreKeeper alloc] init];
+        QuestionManager *qm = [QuestionManager manager];
+        QuestionFactory *qf = [[QuestionFactory alloc] init];
+        
         while (gameon) {
-            AdditionalQuestion *q1 = [[AdditionalQuestion alloc]init];
+            Question *q1 = [qf generateRandomQuestion];
             NSString *userInput = [InputHandler getUserInput: [q1 question]];
             
             if ([userInput isEqualToString:@"quit"]){
@@ -43,9 +47,14 @@ int main(int argc, const char * argv[]) {
                 NSLog(@"Wrong!");
                 [sk setWrongs: [sk wrongs] + 1];
             }
+            
+            [qm addQuestion: q1];
+            
+            [sk displayResult];
+            NSLog(@"%@", [qm timeOutput]);
         }
         
-         [sk displayResult];
+        
     }
     return 0;
 }

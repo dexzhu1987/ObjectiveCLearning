@@ -14,7 +14,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString *menu = @"\nWhat would you like to do next?\nnew - Create a new contact\nlist - List all contacts\nshow ID - print out the details with that ID\nfind name/email - print out the details contained that email(email)\\nquit - Exit Application\n>>>> ";
+        NSString *menu = @"\nWhat would you like to do next?\nnew - Create a new contact\nlist - List all contacts\nshow ID - print out the details with that ID\nfind name/email - print out the details contained that email(email)\nhistory - last three entries\nquit - Exit Application\n>>>> ";
         ContactList *list = [[ContactList alloc]init];
         
         //REPL = Read Evaluate Print Loop;
@@ -60,7 +60,15 @@ int main(int argc, const char * argv[]) {
                 NSInteger index = 0;
                 NSMutableArray *contactlist = [list contacts];
                 for (Contact *contact in contactlist ){
-                    NSLog(@"%ld: <%@> (%@)", index, [contact name], [contact email]);
+                    NSMutableArray *phonelist = [contact numbers];
+                    NSMutableString *phoneNumber = [[NSMutableString alloc] init];
+                    for (PhoneNumber *number in phonelist){
+                        NSString *label = [number label];
+                        NSString *digit = [number number];
+                        NSString *all = [NSString stringWithFormat:@"(%@ - %@)", label, digit];
+                        [phoneNumber appendString: all];
+                    }
+                    NSLog(@"%ld: <%@> (%@) ---- [%@]", index, [contact name], [contact email], phoneNumber);
                     index++;
                 }
             } else if ([command isEqualToString:@"show"]) {
@@ -68,7 +76,21 @@ int main(int argc, const char * argv[]) {
                 NSMutableArray *contactlist = [list contacts];
                 if (searchindex < [contactlist count] && searchindex >=0){
                     Contact * contact = [contactlist objectAtIndex: searchindex];
-                    NSLog(@"\n%ld: <%@> (%@)", searchindex, [contact name], [contact email]);
+//                    NSMutableArray *phonelist = [contact numbers];
+//                    NSString * phoneNumber = @"";
+//                    for (PhoneNumber *number in phonelist){
+//                        NSString * fullPhone = [NSString stringWithFormat: @" (%@ - %@) ", [number label] ,[number number]];
+//                        [phoneNumber stringByAppendingString: fullPhone];
+//                    }
+                    NSMutableArray *phonelist = [contact numbers];
+                    NSMutableString *phoneNumber = [[NSMutableString alloc] init];
+                    for (PhoneNumber *number in phonelist){
+                        NSString *label = [number label];
+                        NSString *digit = [number number];
+                        NSString *all = [NSString stringWithFormat:@"(%@ - %@)", label, digit];
+                        [phoneNumber appendString: all];
+                    }
+                    NSLog(@"%ld: <%@> (%@) ---- [%@]", searchindex, [contact name], [contact email], phoneNumber);
                 } else {
                     NSLog(@"\nnot found");
                 }
@@ -78,7 +100,15 @@ int main(int argc, const char * argv[]) {
                 BOOL print = NO;
                 for (Contact *contact in contactlist ){
                     if ([searchitem isEqualToString: [contact name]] || [searchitem isEqualToString: [contact email]]){
-                        NSLog(@"\n%ld: <%@> (%@)", index, [contact name], [contact email]);
+                        NSMutableArray *phonelist = [contact numbers];
+                        NSMutableString *phoneNumber = [[NSMutableString alloc] init];
+                        for (PhoneNumber *number in phonelist){
+                            NSString *label = [number label];
+                            NSString *digit = [number number];
+                            NSString *all = [NSString stringWithFormat:@"(%@ - %@)", label, digit];
+                            [phoneNumber appendString: all];
+                        }
+                        NSLog(@"%ld: <%@> (%@) ---- [%@]", index, [contact name], [contact email], phoneNumber);
                         print = YES;
                     }
                     index++;
@@ -89,7 +119,15 @@ int main(int argc, const char * argv[]) {
             } else if ([input isEqualToString:@"history"]) {
                 NSMutableArray *contactlist = [list history];
                 for (Contact *contact in contactlist ){
-                   NSLog(@"<%@> (%@)", [contact name], [contact email]);
+                   NSMutableArray *phonelist = [contact numbers];
+                   NSMutableString *phoneNumber = [[NSMutableString alloc] init];
+                   for (PhoneNumber *number in phonelist){
+                        NSString *label = [number label];
+                        NSString *digit = [number number];
+                        NSString *all = [NSString stringWithFormat:@"(%@ - %@)", label, digit];
+                        [phoneNumber appendString: all];
+                   }
+                   NSLog(@" <%@> (%@) ---- [%@]", [contact name], [contact email], phoneNumber);
                 }
             }
        

@@ -19,4 +19,9 @@
     }
     return self;
 }
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@" (%@ - %@)", _label, _number];
+}
 @end
