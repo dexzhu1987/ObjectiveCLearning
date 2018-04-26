@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		56157F41208FC6B800E71A7A /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 56157F40208FC6B800E71A7A /* Pizza.m */; };
-		56157F47208FD38800E71A7A /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 56157F46208FD38800E71A7A /* Kitchen.m */; };
-		56157F49208FD4C500E71A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56157F48208FD4C500E71A7A /* main.m */; };
-		568B8F392092870B00F47807 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F372092870B00F47807 /* InputHandler.m */; };
+		568B8F11209264F600F47807 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F10209264F600F47807 /* main.m */; };
+		568B8F1C209265ED00F47807 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F1A209265ED00F47807 /* InputHandler.m */; };
+		568B8F1F209266E900F47807 /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F1E209266E900F47807 /* PaymentGateway.m */; };
+		568B8F222092682700F47807 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F212092682700F47807 /* PaypalPaymentService.m */; };
+		568B8F252092683700F47807 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F242092683700F47807 /* StripePaymentService.m */; };
+		568B8F282092684600F47807 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F272092684600F47807 /* AmazonPaymentService.m */; };
+		568B8F3120927B5A00F47807 /* ApplePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 568B8F3020927B5A00F47807 /* ApplePaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		56157F2D208FC4E300E71A7A /* CopyFiles */ = {
+		568B8F0B209264F600F47807 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,19 +29,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		56157F2F208FC4E300E71A7A /* Assignment8 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment8; sourceTree = BUILT_PRODUCTS_DIR; };
-		56157F39208FC60200E71A7A /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
-		56157F3F208FC6B800E71A7A /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
-		56157F40208FC6B800E71A7A /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
-		56157F45208FD38800E71A7A /* Kitchen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
-		56157F46208FD38800E71A7A /* Kitchen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
-		56157F48208FD4C500E71A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		568B8F372092870B00F47807 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InputHandler.m; path = ../../../Assignment10/Assignment10/Utils/InputHandler.m; sourceTree = "<group>"; };
-		568B8F382092870B00F47807 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InputHandler.h; path = ../../../Assignment10/Assignment10/Utils/InputHandler.h; sourceTree = "<group>"; };
+		568B8F0D209264F600F47807 /* Assignment10 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assignment10; sourceTree = BUILT_PRODUCTS_DIR; };
+		568B8F10209264F600F47807 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		568B8F1A209265ED00F47807 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		568B8F1B209265ED00F47807 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		568B8F1D209266E900F47807 /* PaymentGateway.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		568B8F1E209266E900F47807 /* PaymentGateway.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		568B8F202092682700F47807 /* PaypalPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		568B8F212092682700F47807 /* PaypalPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		568B8F232092683700F47807 /* StripePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		568B8F242092683700F47807 /* StripePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		568B8F262092684600F47807 /* AmazonPaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		568B8F272092684600F47807 /* AmazonPaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
+		568B8F2F20927B5A00F47807 /* ApplePaymentService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApplePaymentService.h; sourceTree = "<group>"; };
+		568B8F3020927B5A00F47807 /* ApplePaymentService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApplePaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		56157F2C208FC4E300E71A7A /* Frameworks */ = {
+		568B8F0A209264F600F47807 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,128 +56,128 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		56157F26208FC4E300E71A7A = {
+		568B8F04209264F600F47807 = {
 			isa = PBXGroup;
 			children = (
-				56157F31208FC4E300E71A7A /* Assignment8 */,
-				56157F30208FC4E300E71A7A /* Products */,
+				568B8F0F209264F600F47807 /* Assignment10 */,
+				568B8F0E209264F600F47807 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		56157F30208FC4E300E71A7A /* Products */ = {
+		568B8F0E209264F600F47807 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56157F2F208FC4E300E71A7A /* Assignment8 */,
+				568B8F0D209264F600F47807 /* Assignment10 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56157F31208FC4E300E71A7A /* Assignment8 */ = {
+		568B8F0F209264F600F47807 /* Assignment10 */ = {
 			isa = PBXGroup;
 			children = (
-				56157F4A208FD6F700E71A7A /* Utils */,
-				56157F4B208FD72900E71A7A /* Models */,
-				56157F4C208FD85700E71A7A /* Supporting Files */,
+				568B8F10209264F600F47807 /* main.m */,
+				568B8F3220927BB500F47807 /* Models */,
+				568B8F3320927BC200F47807 /* Utils */,
 			);
-			path = Assignment8;
+			path = Assignment10;
 			sourceTree = "<group>";
 		};
-		56157F4A208FD6F700E71A7A /* Utils */ = {
+		568B8F3220927BB500F47807 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				568B8F382092870B00F47807 /* InputHandler.h */,
-				568B8F372092870B00F47807 /* InputHandler.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		56157F4B208FD72900E71A7A /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				56157F45208FD38800E71A7A /* Kitchen.h */,
-				56157F46208FD38800E71A7A /* Kitchen.m */,
-				56157F3F208FC6B800E71A7A /* Pizza.h */,
-				56157F40208FC6B800E71A7A /* Pizza.m */,
+				568B8F2F20927B5A00F47807 /* ApplePaymentService.h */,
+				568B8F3020927B5A00F47807 /* ApplePaymentService.m */,
+				568B8F202092682700F47807 /* PaypalPaymentService.h */,
+				568B8F212092682700F47807 /* PaypalPaymentService.m */,
+				568B8F232092683700F47807 /* StripePaymentService.h */,
+				568B8F242092683700F47807 /* StripePaymentService.m */,
+				568B8F262092684600F47807 /* AmazonPaymentService.h */,
+				568B8F272092684600F47807 /* AmazonPaymentService.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		56157F4C208FD85700E71A7A /* Supporting Files */ = {
+		568B8F3320927BC200F47807 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				56157F39208FC60200E71A7A /* PizzaRestaurant-Prefix.pch */,
-				56157F48208FD4C500E71A7A /* main.m */,
+				568B8F1B209265ED00F47807 /* InputHandler.h */,
+				568B8F1A209265ED00F47807 /* InputHandler.m */,
+				568B8F1D209266E900F47807 /* PaymentGateway.h */,
+				568B8F1E209266E900F47807 /* PaymentGateway.m */,
 			);
-			path = "Supporting Files";
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56157F2E208FC4E300E71A7A /* Assignment8 */ = {
+		568B8F0C209264F600F47807 /* Assignment10 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56157F36208FC4E300E71A7A /* Build configuration list for PBXNativeTarget "Assignment8" */;
+			buildConfigurationList = 568B8F14209264F600F47807 /* Build configuration list for PBXNativeTarget "Assignment10" */;
 			buildPhases = (
-				56157F2B208FC4E300E71A7A /* Sources */,
-				56157F2C208FC4E300E71A7A /* Frameworks */,
-				56157F2D208FC4E300E71A7A /* CopyFiles */,
+				568B8F09209264F600F47807 /* Sources */,
+				568B8F0A209264F600F47807 /* Frameworks */,
+				568B8F0B209264F600F47807 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Assignment8;
-			productName = Assignment8;
-			productReference = 56157F2F208FC4E300E71A7A /* Assignment8 */;
+			name = Assignment10;
+			productName = Assignment10;
+			productReference = 568B8F0D209264F600F47807 /* Assignment10 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		56157F27208FC4E300E71A7A /* Project object */ = {
+		568B8F05209264F600F47807 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = dexunzhu;
 				TargetAttributes = {
-					56157F2E208FC4E300E71A7A = {
+					568B8F0C209264F600F47807 = {
 						CreatedOnToolsVersion = 9.4;
 					};
 				};
 			};
-			buildConfigurationList = 56157F2A208FC4E300E71A7A /* Build configuration list for PBXProject "Assignment8" */;
+			buildConfigurationList = 568B8F08209264F600F47807 /* Build configuration list for PBXProject "Assignment10" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 56157F26208FC4E300E71A7A;
-			productRefGroup = 56157F30208FC4E300E71A7A /* Products */;
+			mainGroup = 568B8F04209264F600F47807;
+			productRefGroup = 568B8F0E209264F600F47807 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56157F2E208FC4E300E71A7A /* Assignment8 */,
+				568B8F0C209264F600F47807 /* Assignment10 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		56157F2B208FC4E300E71A7A /* Sources */ = {
+		568B8F09209264F600F47807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56157F49208FD4C500E71A7A /* main.m in Sources */,
-				56157F41208FC6B800E71A7A /* Pizza.m in Sources */,
-				56157F47208FD38800E71A7A /* Kitchen.m in Sources */,
-				568B8F392092870B00F47807 /* InputHandler.m in Sources */,
+				568B8F282092684600F47807 /* AmazonPaymentService.m in Sources */,
+				568B8F252092683700F47807 /* StripePaymentService.m in Sources */,
+				568B8F1F209266E900F47807 /* PaymentGateway.m in Sources */,
+				568B8F3120927B5A00F47807 /* ApplePaymentService.m in Sources */,
+				568B8F11209264F600F47807 /* main.m in Sources */,
+				568B8F1C209265ED00F47807 /* InputHandler.m in Sources */,
+				568B8F222092682700F47807 /* PaypalPaymentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		56157F34208FC4E300E71A7A /* Debug */ = {
+		568B8F12209264F600F47807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +235,7 @@
 			};
 			name = Debug;
 		};
-		56157F35208FC4E300E71A7A /* Release */ = {
+		568B8F13209264F600F47807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +286,7 @@
 			};
 			name = Release;
 		};
-		56157F37208FC4E300E71A7A /* Debug */ = {
+		568B8F15209264F600F47807 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -286,7 +294,7 @@
 			};
 			name = Debug;
 		};
-		56157F38208FC4E300E71A7A /* Release */ = {
+		568B8F16209264F600F47807 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -297,25 +305,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56157F2A208FC4E300E71A7A /* Build configuration list for PBXProject "Assignment8" */ = {
+		568B8F08209264F600F47807 /* Build configuration list for PBXProject "Assignment10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56157F34208FC4E300E71A7A /* Debug */,
-				56157F35208FC4E300E71A7A /* Release */,
+				568B8F12209264F600F47807 /* Debug */,
+				568B8F13209264F600F47807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56157F36208FC4E300E71A7A /* Build configuration list for PBXNativeTarget "Assignment8" */ = {
+		568B8F14209264F600F47807 /* Build configuration list for PBXNativeTarget "Assignment10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56157F37208FC4E300E71A7A /* Debug */,
-				56157F38208FC4E300E71A7A /* Release */,
+				568B8F15209264F600F47807 /* Debug */,
+				568B8F16209264F600F47807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 56157F27208FC4E300E71A7A /* Project object */;
+	rootObject = 568B8F05209264F600F47807 /* Project object */;
 }
