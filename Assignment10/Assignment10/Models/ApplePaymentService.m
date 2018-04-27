@@ -9,16 +9,14 @@
 #import "ApplePaymentService.h"
 
 @implementation ApplePaymentService
+
 - (void) processPaymentAmount: (NSInteger) payment
 {
     NSLog(@"%@ processed amount $%ld", @"Apple", payment);
 }
+
 - (BOOL) canProcessPayment
 {
-    int random = arc4random_uniform(2);
-    if (random == 1){
-        return YES;
-    }
-    return NO;
+    return  arc4random_uniform(2) == 1;
 }
 @end

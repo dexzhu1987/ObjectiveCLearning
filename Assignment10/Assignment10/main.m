@@ -22,22 +22,22 @@ int main(int argc, const char * argv[]) {
         NSInteger input = [userInput integerValue];
         
         PaymentGateway *paymentGateway = [PaymentGateway new];
-       
+        NSLog(@"input %ld", input);
         
         switch (input) {
             case 1:
             {
                 PaypalPaymentService *paypal = [PaypalPaymentService new];
                 paymentGateway.delegate = paypal;
-                NSLog(@"input %ld", input);
                 [paymentGateway processPaymentAmount:random];
                 break;
+                //instance(variable) created in the block stays in the block  (local variable)
+                //so if we delegate here and use the method [processPaymentAmount] after the block, it will not use the delegator methods [will not use paypal method]
             }
             case 2:
             {
                 StripePaymentService *stripe = [StripePaymentService new];
                 paymentGateway.delegate = stripe;
-                NSLog(@"input %ld", input);
                 [paymentGateway processPaymentAmount:random];
                 break;
             }
@@ -45,7 +45,6 @@ int main(int argc, const char * argv[]) {
             {
                 AmazonPaymentService *amazon = [AmazonPaymentService new];
                 paymentGateway.delegate = amazon;
-                NSLog(@"input %ld", input);
                 [paymentGateway processPaymentAmount:random];
                 break;
             }
@@ -53,7 +52,6 @@ int main(int argc, const char * argv[]) {
             {
                 ApplePaymentService *apple = [ApplePaymentService new];
                 paymentGateway.delegate = apple;
-                NSLog(@"input %ld", input);
                 [paymentGateway processPaymentAmount:random];
                 break;
             }

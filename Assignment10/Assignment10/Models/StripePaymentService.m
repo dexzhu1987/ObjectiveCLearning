@@ -16,10 +16,6 @@
 
 - (BOOL) canProcessPayment
 {
-    int random = arc4random_uniform(2);
-    if (random == 1){
-        return YES;
-    }
-    return NO;
+    return  arc4random_uniform(2) == 1;
 }
 @end
