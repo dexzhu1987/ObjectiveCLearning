@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
+#import "Player.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        Player *player = [Player new];
         while (YES) {
-            NSString *input = [InputHandler getUserInputWithPrompt:@"Type \"rool\" or \"r\""];
+            NSString *input = [InputHandler getUserInputWithPrompt:@"Type \"roll\" or \"r\""];
             if ([input isEqualToString:@"roll"] || [input isEqualToString:@"r"]){
-                
+                [player roll];
+                NSLog(@"%@",[player output]);
+                if ([player gameOver]){
+                    NSLog(@"Game Over");
+                    break;
+                }
             }
         }
         
